@@ -6,7 +6,7 @@ from telebot import types
 
 PATH = os.path.abspath(__file__ + "/.." + "/..")
 
-bot = telebot.TeleBot("5925989700:AAEjYsryTf3ie3wiskljDvph_6R6vS0Fc6I")
+bot = telebot.TeleBot("")
 question_list = []
 owner_id = 1109954939
 keyboard = types.ReplyKeyboardMarkup(True)
@@ -32,11 +32,6 @@ def discord(message):
 @bot.message_handler(commands=["help"])
 def help(message):
     bot.reply_to(message, "Вот что я умею:\n1./discord - получение ссылки на оффициальный дискорд сервер\n2./questiontoadm - Вы можете задать вопрос к администрации бота. Оффтоп - бан на 2 часа.")
-
-
-#-------------------------------------------------------------------------------------------------------------------------------------
-#|                                                         WORK WITH DATABASE                                                        |
-#-------------------------------------------------------------------------------------------------------------------------------------
 
 
 
